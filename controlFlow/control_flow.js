@@ -46,3 +46,22 @@ console.log("User Category:", userCategory);
 let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated":"Not authenticated";
 console.log("Authentication Status:", authenticationStatus);
+
+let personIs = "Employee";
+let isAuthorisedTo;
+
+switch(personIs){
+    case "Employee":
+        isAuthorisedTo = "You have Authorized to Dietary Services";
+        break;
+    case "Enrolled Member":
+        isAuthorisedTo = "You have authorization to Dietary Services and one-on-one interaction with dietician.";
+        break;
+    case "Non-Subscriber":
+        isAuthorisedTo = "Please Enroll first or least subscribe first to avail this facility.";
+        break;
+    default:
+        isAuthorisedTo = "Unknown";
+}
+
+console.log("Authorization : ", isAuthorisedTo);
